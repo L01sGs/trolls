@@ -9,11 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <style>
-        /* Configurações Globais e Fundo Sólido */
+        /* Configurações Globais e Fundo dos Anos 2000 */
         body {
             margin: 0;
             padding: 0;
-            background-color: #0c0c0f; 
+            background-image: url('https://static.tumblr.com/4f8c2fee9756946e365e8816b88140c2/0z8wudi/EIeo9bcqh/tumblr_static_tumblr_static__focused_v3.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
             font-family: 'Press Start 2P', cursive;
             color: #ffffff;
             font-size: 11px;
@@ -25,7 +28,7 @@
             display: block;
             text-align: center;
             padding: 30px 20px;
-            background-color: #000000; 
+            background-color: rgba(0, 0, 0, 0.75);
             border-bottom: 6px double #00ff00;
         }
 
@@ -52,7 +55,7 @@
             display: block;
         }
 
-        /* --- 2. LAYOUT EM DUAS COLUNAS --- */
+        /* --- 2. LAYOUT EM DUAS COLUNAS (Estilo Blog antigo) --- */
         .main-layout {
             max-width: 1000px;
             margin: 30px auto;
@@ -61,10 +64,12 @@
             padding: 0 15px;
         }
 
+        /* Coluna Esquerda: Posts */
         .content-area {
             flex: 2;
         }
 
+        /* Coluna Direita: Barra Lateral */
         .sidebar-area {
             flex: 1;
             display: flex;
@@ -72,7 +77,7 @@
             gap: 20px;
         }
 
-        /* Caixas de Conteúdo */
+        /* Caixas de Conteúdo (Estilo Janela Antiga) */
         .post-container, .widget-container {
             background-color: rgba(10, 10, 15, 0.95);
             border: 3px solid #00ff00;
@@ -92,7 +97,7 @@
             text-align: left;
         }
 
-        /* --- 3. ESTILOS DE TEXTO E SEÇÕES --- */
+        /* --- 3. ESTILOS DE TEXTO E PERSONAGENS --- */
         .post-content p {
             margin-bottom: 15px;
             word-wrap: break-word;
@@ -105,36 +110,36 @@
             margin: 15px 0;
         }
 
-        /* Estilo da nova seção Lado a Lado para os Trolls */
-        .trolls-flex-container {
+        /* Layout Lado a Lado dos Trolls */
+        .trolls-section {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             align-items: flex-start;
         }
 
-        .trolls-text-column {
+        .trolls-text-list {
             flex: 1.2;
         }
 
-        .trolls-image-column {
+        .trolls-image-box {
             flex: 0.8;
             background-color: #111;
-            border: 2px dashed #00ff00;
+            border: 3px dashed #00ff00;
             padding: 10px;
             text-align: center;
         }
 
-        .trolls-huge-img {
+        .trolls-full-img {
             width: 100%;
             height: auto;
             image-rendering: pixelated;
         }
 
-        /* Cores dos Quirks dos Trolls */
-        .tc-karkat { color: #ff0000; }
+        /* Cores dos Textos dos Trolls baseados no Sangue */
         .tc-aradia { color: #a10000; }
         .tc-tavros { color: #a15000; }
         .tc-sollux { color: #a1a100; }
+        .tc-karkat { color: #ff0000; }
         .tc-nepeta { color: #416600; }
         .tc-kanaya { color: #008141; }
         .tc-terezi { color: #008282; }
@@ -148,8 +153,18 @@
         .highlight-pink { color: #ff00ff; }
         .highlight-red { color: #ff0000; }
         .highlight-green { color: #4ac925; }
+        .highlight-purple { color: #6a0dad; }
 
-        /* --- 4. MIDIAS E LINKS --- */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* --- 4. MIDIAS E LINKS DO POST --- */
         .image-box {
             background-color: #111;
             border: 2px solid #ff0000;
@@ -182,7 +197,7 @@
             background-color: #00ff00;
         }
 
-        /* --- 5. INTERAÇÕES --- */
+        /* --- 5. INTERAÇÕES DA BARRA LATERAL --- */
         .btn-interact {
             display: block;
             width: 100%;
@@ -229,7 +244,7 @@
                     <p>MEU DEUS DO CEU!!!! vc nao ta entendendo!!!!! 8D 8D</p>
                     <p>tipo... vc PRECISA conhecer essa webcomic q ta todo mundo comentando na internet!!!! o nome eh HOMESTUCK e eh do msm cara q fez Jailbreak e Problem Sleuth (o andrew hussie, vulgo mestre supremo kkkk)!!!!</p>
                     <p>eh basicamente a historia de um mlk de 13 anos chamado <span class="highlight-blue">John Egbert</span> (ele curte uns filmes mt ruins de terror e magica kk bem nerd) q ta trancado no quarto esperando um jogo de computador mt foda e misterioso sair em versao Beta... o nome do jogo eh <strong>Sburb</strong>!!!!</p>
-                    <p>so q qnd ele e os amigos dele da internet (a <span class="highlight-pink">Rose</span>, o <span class="highlight-red">Dave</span> e a <span class="highlight-green">Jade</span>) comecam a jogar... o jogo simplesmente INTERAGE COM A REALIDADE!!!! O_O tipo... eles conseguem mover os moveis do quarto uns dos outros usando o mouse do PC!!! mto bizarro dorgas mano kkkkkk</p>
+                    <p>so q qnd ele e os amigos dele da internet (a <span class="highlight-pink">Rose</span>, o <span class="highlight-red">Dave</span> e a <span class="highlight-green">Jade</span>) comecam a jogar... o jogo simplesmente INTERAGE WITH A REALIDADE!!!! O_O tipo... eles conseguem mover os moveis do quarto uns dos outros usando o mouse do PC!!! mto bizarro dorgas mano kkkkkk</p>
                    
                     <a href="https://www.homestuck.com" target="_blank" class="official-link">
                         ==&gt; CLIQUE AKI PRO SITE OFICIAL DA COMIC !!!!
@@ -260,44 +275,44 @@
             </article>
 
             <article class="post-container">
-                <h2 class="post-title">POSTED: 30/10/2009 ==&gt; EXPLICAÇAO DE TODOS OS 12 TROLLS!!!1!</h2>
+                <h2 class="post-title">POSTED: 30/10/2009 ==&gt; GUIA DOS TROLLS!!!1! FICOU MT TENSO XD</h2>
                 <div class="post-content">
-                    <p>Mano do ceu, resolvi fazer um guia definitivo d todos os trolls pq eh mt gnt e os cara tem uns "quirks" (tipo mania de digitar esquisito na internet kkk) mt bizarro x_x Fica vendo a listinha q montei pra vcs decorarem!!</p>
+                    <p>Ow galere resolvi cria esse post especial pa explica de um jeito resumidu kem eh kem nesa rassa de chifrudo d alternia kkkk x_x fika vendo o textao q escrevi e a img com todos eles do lado!!!</p>
                     
-                    <div class="trolls-flex-container">
+                    <div class="trolls-section">
                         
-                        <div class="trolls-text-column">
-                            <p><span class="tc-aradia">ARADIA:</span> a minina fantasma x_x ela comessa a historia morta dpois vira robo dpois vira fada wtf kkkk ela digita trocando as letra o pelo numero 0 e num tem sentimentos d inicio :/</p>
+                        <div class="trolls-text-list">
+                            <p><span class="tc-aradia">ARADIA:</span> a minina fantasma bizarra o_O ela fika flando d morte dpois vira um robo e dpois vira fada lol eli troca as letra "o" por "0" pq e mei morta e sem sentimentus de comesso :P</p>
                             
-                            <p><span class="tc-tavros">TAVROS:</span> o garoto dos chifrao de touro q usa cadeira de rodas pq a vriska derrubou ele d um cliff :-( ele eh super timido, ama Pupa Pan e digita INVERTENDO AS MAIUSCULA (tIPO aSSIM mANO,)</p>
+                            <p><span class="tc-tavros">TAVROS:</span> o mlk manso d chifrao d touro q usa cadera d rodas pq a vriska fudeu as costa deli kkk :-( eli ama uns bixo voador fantasiado e digita INVERTENDU AS MAIUSCULA tIPO aSSIM mANO,</p>
                             
-                            <p><span class="tc-sollux">SOLLUX:</span> u mestre dus conputador!! eli tem 4 oio (dois azul e dois vermei) e fala cum mo sotaqe de lingua presa kkk digita trocando as letra por "2" e "to" tipo ii2 2o cool B-)</p>
+                            <p><span class="tc-sollux">SOLLUX:</span> u radker do grupo!! tem 4 oio de cores difetente (2 azul e 2 vermei) e fala ingasgado kkkk eli digita tdu botando u numero "2" nas palavra pq eli curte binarismo e duplisidade B-)</p>
                             
-                            <p><span class="tc-karkat">KARKAT:</span> u lider mais nervozo de todos!!!1! ele ODEIA tudo e grita cum tdu mundo nu pesterchum escrevendo TUDO EM CAPS LOCK >:O (sangue vermelho mutante secreto alert!!)</p>
+                            <p><span class="tc-karkat">KARKAT:</span> u cara mas estressado da internet toda!!!1! eli odeia tudu e fik digitando TUDO EM CAPS LOCK GRITANDO COMSIGO MESMO kkkk >:O u sangue deli e vermelho mutante mas e segredo kkk tsundere total</p>
                             
-                            <p><span class="tc-nepeta">NEPETA:</span> a otaku dus gatinhu :33 ela mora numa caverna fazendo roleplay na internet e shippando os amigo td!! ela comessa as frase cum :33 e fas trocadilhu de gato purr-feito kkk mt fofa</p>
+                            <p><span class="tc-nepeta">NEPETA:</span> a otaku dos gatinhu :33 ela mora numa caverna fasendo uns roleplay d caçadora mto dorgas e fica xipando todo mundo nu mural dela!! comesa as frase cum :33 e bota trocadinho d gato kkk mto fofis</p>
                             
-                            <p><span class="tc-kanaya">KANAYA:</span> a troll mas elegante, ela curte moda, cortar as coisas cum motosserra e eh tipo um vampiro (rainbow drinker o_o) ela DIGITA COMEÇANDO TODA PALAVRA COM MAIUSCULA ASSIM!!</p>
+                            <p><span class="tc-kanaya">KANAYA:</span> a troll mas xiq estilosa, curte costura, moda e vira um vampiro q brilha nu escuro (rainbow drinker mds kkk) ela DIGITA COMEÇANDO TODA PALAVRA COM MAIUSCULA PRA PARECER CHIQUE!!!</p>
                             
-                            <p><span class="tc-terezi">TEREZI:</span> a mina cega q consegue VER AS CORES PELO CHEIRO E GOSTO :P mto dorgas mano!!! ela eh loca por justiça, usa ólinho vermelho e digita cum numeros tipo 43551M (1337 speak total standard) XD</p>
+                            <p><span class="tc-terezi">TEREZI:</span> a mina sega mto loca q xera e lambe a tela pra ver as cores kkkk xD ela gosta d dragao, usa oclinhos vermelho e digita cum numeros de led tipu 43551M mto nerd hackeadora d lan house</p>
                             
-                            <p><span class="tc-vriska">VRISKA:</span> a spider-girl ultra perigosa e crueeel :::;) ela tem mo sorte e usa dados magicos. fodeu a vida de metade dus trolls kkk ela troca o "e" ou "oito" pelo numero 8 e bota 8 óio no emoticon :::;)</p>
+                            <p><span class="tc-vriska">VRISKA:</span> a pirada dos 8 oio e dos dado magico de RPG :::;) ela e ultra crueeel e fudeu a vida d metade dos amigo kkkk ela vive trocando as letra ou a silaba "oito" pelo num 8 mto chata mas amo ela lol</p>
                             
-                            <p><span class="tc-equius">EQUIUS:</span> u cara fortão esquisito e encanado cum castas de sangue!! ele quebra tudo pq tem força d+ e fica suando mto o_o" eli digita usando D-&gt; pras setas e trocando a palavra "nay" ou "percent" por %</p>
+                            <p><span class="tc-equius">EQUIUS:</span> u monstro fortão eskesito d+ o_o" eli quebra tudo q toca sem querer pq e forte pakarai e fica suando baldes!!! eli gosta d cavalo e comesa os texto botando uma seta d arco D-&gt; pras palavra</p>
                             
-                            <p><span class="tc-gamzee">GAMZEE:</span> u troll palhaço mto chapado de torta de Sopor Slime kkkk :o) ele fala super de boa "miracles bro" e digita AlTeRnAnDo MaIuScUlA e MiNuScUlA mO tRaMpOfO dE lEr kkkkk</p>
+                            <p><span class="tc-gamzee">GAMZEE:</span> u troll palhaço do capeta :o) eli fika comendo torta de sopor slime e fika locasso flando d milagres e de deus kkk eli escreve AlTeRnAnDo MaIuScUlA e MiNuScUlA mO rUfIãO dE lEr mds do ceu kkkk</p>
                             
-                            <p><span class="tc-eridan">ERIDAN:</span> u princepe dos mar patetico d+ q odeia os troll de terra e qer matar todo mundo cum uma arma de laser x_x ele usa cachecol e duplica as letra w e v (wwhat are vyou doing) :/</p>
+                            <p><span class="tc-eridan">ERIDAN:</span> u troll da rialesa dos mar q se axa superior mas e mó otario patetico kkk kkk eli usa capa e cachecol e odeia os troll d terra querendo matar td mundo. eli bota duas letra "w" e "v" tdu junto :/</p>
                             
-                            <p><span class="tc-feferi">FEFERI:</span> a princesa peixe ultra empolgada! )( ela eh herdeira do trono de alternia mas eh super de boa e quer cuidar d todo mundo. ela digita usando ) ( pros h maiusculo e -* pros emoticons de coroa</p>
+                            <p><span class="tc-feferi">FEFERI:</span> a princesa herdera peixe ultra fofinha e animada!! )( ela ama as balea e quer q todo mundo se de bem sem preconceito d casta! ela bota os h maiusculo tipu ) ( e fas cara de peixe nos emoticon -*</p>
                         </div>
                         
-                        <div class="trolls-image-column">
-                            <p style="color:#00ff00; font-size:9px; margin-bottom:5px;">[ FOTO DELES SEM CHIFRE NO REDDIT KKK ]</p>
-                            <img class="trolls-huge-img" src="https://preview.redd.it/trolls-without-horns-v0-i2gju0kufsj01.png?width=640&crop=smart&auto=webp&s=f72a2e92b3ffaaec10338982c64d8e9cb3b9f7d5" alt="Todos os Trolls de Homestuck">
-                            <p style="font-size:8px; color:#888; margin-top:5px;">Olha o naipe dos bixo sem os chifre de doce mto estranho mano kkkkkk mds</p>
+                        <div class="trolls-image-box">
+                            <p style="color:#00ff00; font-size:9px; margin-bottom:10px;">[ FOTO DA BANCA TODA UNIDA 8D ]</p>
+                            <img class="trolls-full-img" src="https://preview.redd.it/rank-the-trolls-from-worst-to-best-in-the-comments-heres-my-v0-qjzlfq8e3btf1.jpeg?auto=webp&s=e30e83a6f8666a2f04c3d1714949a124f1597058" alt="Todos os 12 Trolls de Homestuck Juntos">
+                            <p style="font-size:8px; color:#777; margin-top:8px;">olha os doze junto no ranking da net kkkkk o gamzee la atras rindo mds medinho kkkkk</p>
                         </div>
-
+                        
                     </div>
                 </div>
             </article>
