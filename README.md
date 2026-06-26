@@ -1,3 +1,8 @@
+Aqui está o código completo do seu blog com a nova imagem das nuvens de Homestuck configurada no plano de fundo do `body`.
+
+As propriedades do CSS foram ajustadas para que a imagem cubra toda a tela de forma estendida (`background-size: cover`), fique fixa enquanto você rola a página (`background-attachment: fixed`) e se repita caso a página fique muito longa (`background-repeat: repeat`):
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,12 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <style>
-        /* Configurações Globais e Fundo dos Anos 2000 */
+        /* Configurações Globais e Fundo Estendido de Nuvens */
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://static.tumblr.com/4f8c2fee9756946e365e8816b88140c2/0z8wudi/EIeo9bcqh/tumblr_static_tumblr_static__focused_v3.jpg');
+            background-image: url('https://f4.bcbits.com/img/a3224247211_16.jpg');
             background-size: cover;
+            background-repeat: repeat;
             background-attachment: fixed;
             background-position: center;
             font-family: 'Press Start 2P', cursive;
@@ -243,7 +249,7 @@
                 <div class="post-content">
                     <p>MEU DEUS DO CEU!!!! vc nao ta entendendo!!!!! 8D 8D</p>
                     <p>tipo... vc PRECISA conhecer essa webcomic q ta todo mundo comentando na internet!!!! o nome eh HOMESTUCK e eh do msm cara q fez Jailbreak e Problem Sleuth (o andrew hussie, vulgo mestre supremo kkkk)!!!!</p>
-                    <p>eh basicamente a historia de um mlk de 13 anos chamado <span class="highlight-blue">John Egbert</span> (ele curte uns filmes mt ruins de terror e magica kk bem nerd) q ta trancado no quarto esperando um jogo de computador mt foda e misterioso sair em versao Beta... o nome do jogo eh <strong>Sburb</strong>!!!!</p>
+                    <p>eh basicamente a historia de um mlk de 13 anos chamado <span class="highlight-blue">John Egbert</span> (ele curte uns filmes mt ruins d terror e magica kk bem nerd) q ta trancado no quarto esperando um jogo de computador mt foda e misterioso sair em versao Beta... o nome do jogo eh <strong>Sburb</strong>!!!!</p>
                     <p>so q qnd ele e os amigos dele da internet (a <span class="highlight-pink">Rose</span>, o <span class="highlight-red">Dave</span> e a <span class="highlight-green">Jade</span>) comecam a jogar... o jogo simplesmente INTERAGE WITH A REALIDADE!!!! O_O tipo... eles conseguem mover os moveis do quarto uns dos outros usando o mouse do PC!!! mto bizarro dorgas mano kkkkkk</p>
                    
                     <a href="https://www.homestuck.com" target="_blank" class="official-link">
@@ -260,7 +266,7 @@
                    
                     <div class="char-card">
                         <span class="highlight-red">KARKAT VANTAS (carcanguejo kk):</span>
-                        <p>MEEEU DEUS o bicho eh uma maquina de xingamento!!!! xD ele digita TUDO EM CAPS LOCK E PARECE Q TA SEMPRE GRITANDO COM VOCE!!! ele eh o lider e o sangue dele eh mutante mas ele esconde d todo mundo pra nao morrer... mt tsundere ele!!!! O_O</p>
+                        <p>MEEEU DEUS o bicho eh uma maquina d xingamento!!!! xD ele digita TUDO EM CAPS LOCK E PARECE Q TA SEMPRE GRITANDO COM VOCE!!! ele eh o lider e o sangue dele eh mutante mas ele esconde d todo mundo pra nao morrer... mt tsundere ele!!!! O_O</p>
                        
                         <div class="image-box">
                             <img class="karkat-img" src="https://static.wikia.nocookie.net/mspaintadventures/images/1/17/Karkat_Vantas.png" alt="Karkat">
@@ -344,3 +350,5 @@
 
 </body>
 </html>
+
+```
