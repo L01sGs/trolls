@@ -1,7 +1,3 @@
-Aqui está o código completo do seu blog com a nova imagem das nuvens de Homestuck configurada no plano de fundo do `body`.
-
-As propriedades do CSS foram ajustadas para que a imagem cubra toda a tela de forma estendida (`background-size: cover`), fique fixa enquanto você rola a página (`background-attachment: fixed`) e se repita caso a página fique muito longa (`background-repeat: repeat`):
-
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
